@@ -59,11 +59,11 @@ const appendPageLinks = (list) => {
 
    for(let i = 1; i <= totalPages; i ++) {
       const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.textContent = i;
-      a.href = '#';
+      const a = document.createElement('a'); //<a></a>
+      a.textContent = i; ////<a>1</a>
+      a.href = '#';  ////<a href="#"" >1</a>
       if ( i == 1) {
-       a.className = "active";  
+       a.className = "active";  //<a href="#"" class="active >1</a>
       }
 
       ul.appendChild(li);
